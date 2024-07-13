@@ -1,0 +1,64 @@
+﻿<Controls:MetroWindow x:Class="ZeusTopClientes.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"              
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="300" Width="320"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterScreen">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="81.08"/>
+            <RowDefinition Height="Auto" MinHeight="138"/>
+            <RowDefinition Height="Auto" MinHeight="44.84"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Width="80">
+            <Image Height="80" Width="80" 
+                   Source="Icons\iconeperfil.png" 
+                   Stretch="UniformToFill" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="10,20,10,10">
+
+            <TextBlock Text="Usuário:" HorizontalAlignment="Center" />
+            <Border 
+                CornerRadius="3"
+                BorderThickness="2"
+                BorderBrush="Black" Width="207">
+                <TextBox x:Name="txtUsername" Background="White" BorderBrush="Transparent" TextBlock.TextAlignment="Center" Height="25" />
+            </Border>
+
+            <TextBlock Text="Senha:" HorizontalAlignment="Center" Margin="0,10,0,0" />
+            <Border
+                BorderBrush="Black" 
+                BorderThickness="2" 
+                CornerRadius="3" 
+                Width="207">
+                <PasswordBox x:Name="txtPassword" Background="White" BorderBrush="Transparent" TextBlock.TextAlignment="Center" Height="25"/>
+            </Border>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" Width="156" Margin="0,2,0,0">
+            <Border
+                BorderBrush="#3372f1"
+                BorderThickness="2" 
+                CornerRadius="4" 
+                Width="156" 
+                Height="35">
+                <Button Content="Login" 
+                        Background="#3372f1" 
+                        BorderBrush="#3372f1" 
+                        Width="155" 
+                        Height="33"
+                        Click="btnLogin_Click" Margin="-1,-1,-2,-1" Foreground="White" FontSize="15"/>
+
+            </Border>
+        </StackPanel>
+        <Button x:Name="button" Width="33" Height="33" HorizontalAlignment="Left" Margin="283,1,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="Black" RenderTransformOrigin="0.525,0.404" CommandParameter="{Binding ClickMode, ElementName=button}" Click="button_Click" Style="{DynamicResource MahApps.Styles.Button.Circle}">
+            <Controls:FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE713;" Height="19" Width="21"/>
+        </Button>
+    </Grid>
+</Controls:MetroWindow>
