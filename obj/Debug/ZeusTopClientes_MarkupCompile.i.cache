@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\alydo\source\repos\topClientes\ZeusTopClientes\ZeusTopClientes\obj\Debug\
+C:\Users\USUARIO\Documents\Projetos\ZeusTopClientes\obj\Debug\
 ZeusTopClientes
 none
 false
 DEBUG;TRACE
-C:\Users\alydo\source\repos\topClientes\ZeusTopClientes\ZeusTopClientes\App.xaml
-3390364028
+C:\Users\USUARIO\Documents\Projetos\ZeusTopClientes\scr\View\App.xaml
+31915147619
 
-9251430875
-90-1404500717
-ConfigIni.xaml;LoginWindow.xaml;MainWindow.xaml;
+9-1463778265
+56-18400794
+scr\View\ConfigIni.xaml;scr\View\LoginWindow.xaml;scr\View\MainWindow.xaml;
 
 False
 

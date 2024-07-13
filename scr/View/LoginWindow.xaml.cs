@@ -13,7 +13,7 @@ namespace ZeusTopClientes
         private readonly NpgsqlConnection connection;
         private const string IniFilePath = "ZTopclientes.ini";
         private const string Username = "postgres";
-        private const string Password = "postzeus2011";
+        private const string Password = "pepino";
 
         public LoginWindow()
         {

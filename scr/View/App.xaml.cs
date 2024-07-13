@@ -10,7 +10,7 @@ namespace ZeusTopClientes
     {
         private const string IniFilePath = "ZTopclientes.ini";
         private const string Usuario = "postgres";
-        private const string Password = "postzeus2011";
+        private const string Password = "pepino";
 
         protected override void OnStartup(StartupEventArgs e)
         {

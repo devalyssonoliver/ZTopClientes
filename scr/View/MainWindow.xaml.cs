@@ -24,7 +24,7 @@ namespace ZeusTopClientes
     {
         private const string IniFilePath = "ZTopclientes.ini";
         private const string Username = "postgres";  // Usuário fixo
-        private const string Password = "postzeus2011";  // Senha fixa
+        private const string Password = "pepino";  // Senha fixa
 
         public MainWindow()
         {
@@ -35,9 +35,9 @@ namespace ZeusTopClientes
 
             string connString = $"Host={config["Host"]};Port={config["Port"]};Username={Username};Password={Password};Database={config["Database"]}";
 
-            var topClientes = GetTopClientesFromDatabase(connString, "SELECT * FROM topclientes");
+            var vtopClientes = GetTopClientesFromDatabase(connString, "SELECT * FROM vtopclientes");
             dataCliente.Items.Clear();
-            dataCliente.ItemsSource = topClientes;
+            dataCliente.ItemsSource = vtopClientes;
         }
 
         private List<TopCliente> GetTopClientesFromDatabase(string connString, string query)
